@@ -6,9 +6,14 @@ interface stockData {
   [timePoint: string]: number;
 }
 
+// TODO: determine if i can change colors depending on value (green for positive, red for negative)
+// TODO: destroy chart on unmount
+
 const LineChart = () => {
   const labels = [''];
 
+  // to serve
+  // TODO: filter data so that it is only between market open and close
   const returnData = () => {
     const returnedData = Object.entries(ibmData['Time Series (5min)']).reduce(
       (obj: stockData, dataPoint) => {
@@ -27,7 +32,7 @@ const LineChart = () => {
     labels,
     datasets: [
       {
-        label: 'Dataset 1',
+        label: 'Dataset 1', // to dynamically fill
         data: _data,
         borderColor: 'rgb(255, 99, 132)',
         backgroundColor: 'rgba(255, 99, 132, 0.5)'
@@ -48,13 +53,14 @@ const LineChart = () => {
       },
       title: {
         display: true,
-        text: 'IBM Data'
+        text: 'IBM Data' // to serve
       }
     }
   };
 
   return (
     <div>
+      {/* datasetIdKey to set */}
       <Line datasetIdKey="1" data={data} options={options} />
     </div>
   );
