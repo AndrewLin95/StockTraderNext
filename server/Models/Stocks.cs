@@ -1,7 +1,7 @@
 
 namespace StockTraderNext.Models;
 
-public class StockService
+public class Stocks
 {
   public MetaData metaData { get; set; } = null!;
   public TimeSeries timeSeries { get; set; } = null!;
