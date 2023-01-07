@@ -1,0 +1,8 @@
+C:\Users\Andre\OneDrive\Desktop\Odin Project\StockTraderNext\server\obj\Debug\net7.0\serverDOTnet.csproj.AssemblyReference.cache
+C:\Users\Andre\OneDrive\Desktop\Odin Project\StockTraderNext\server\obj\Debug\net7.0\serverDOTnet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Andre\OneDrive\Desktop\Odin Project\StockTraderNext\server\obj\Debug\net7.0\serverDOTnet.AssemblyInfoInputs.cache
+C:\Users\Andre\OneDrive\Desktop\Odin Project\StockTraderNext\server\obj\Debug\net7.0\serverDOTnet.AssemblyInfo.cs
+C:\Users\Andre\OneDrive\Desktop\Odin Project\StockTraderNext\server\obj\Debug\net7.0\serverDOTnet.csproj.CoreCompileInputs.cache
+C:\Users\Andre\OneDrive\Desktop\Odin Project\StockTraderNext\server\obj\Debug\net7.0\serverDOTnet.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Andre\OneDrive\Desktop\Odin Project\StockTraderNext\server\obj\Debug\net7.0\serverDOTnet.RazorAssemblyInfo.cache
+C:\Users\Andre\OneDrive\Desktop\Odin Project\StockTraderNext\server\obj\Debug\net7.0\serverDOTnet.RazorAssemblyInfo.cs

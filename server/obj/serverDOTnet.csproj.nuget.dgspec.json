@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Andre\\OneDrive\\Desktop\\Odin Project\\StockTraderNext\\serverDOTnet\\serverDOTnet.csproj": {}
+    "C:\\Users\\Andre\\OneDrive\\Desktop\\Odin Project\\StockTraderNext\\server\\serverDOTnet.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Andre\\OneDrive\\Desktop\\Odin Project\\StockTraderNext\\serverDOTnet\\serverDOTnet.csproj": {
+    "C:\\Users\\Andre\\OneDrive\\Desktop\\Odin Project\\StockTraderNext\\server\\serverDOTnet.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Andre\\OneDrive\\Desktop\\Odin Project\\StockTraderNext\\serverDOTnet\\serverDOTnet.csproj",
+        "projectUniqueName": "C:\\Users\\Andre\\OneDrive\\Desktop\\Odin Project\\StockTraderNext\\server\\serverDOTnet.csproj",
         "projectName": "serverDOTnet",
-        "projectPath": "C:\\Users\\Andre\\OneDrive\\Desktop\\Odin Project\\StockTraderNext\\serverDOTnet\\serverDOTnet.csproj",
+        "projectPath": "C:\\Users\\Andre\\OneDrive\\Desktop\\Odin Project\\StockTraderNext\\server\\serverDOTnet.csproj",
         "packagesPath": "C:\\Users\\Andre\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Andre\\OneDrive\\Desktop\\Odin Project\\StockTraderNext\\serverDOTnet\\obj\\",
+        "outputPath": "C:\\Users\\Andre\\OneDrive\\Desktop\\Odin Project\\StockTraderNext\\server\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Andre\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -37,6 +37,12 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "RestSharp": {
+              "target": "Package",
+              "version": "[108.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

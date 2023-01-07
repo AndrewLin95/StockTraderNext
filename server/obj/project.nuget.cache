@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "fGlu2DIcz6mb0JYWCnTnBBMuB1BJYwlOz0m8qz9BKcptPQcEXc5oBjchukPSehSNChEj9Nz3dem7jx1a1czycA==",
+  "dgSpecHash": "fGzR1ZILoJmPbWG8IDnTp0YGElvof9wP3P5jsUSDBXSrQUBX8LtBtl3SaFLSAwQWwD1IXoYipfGTpJqnDTw2zA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Andre\\OneDrive\\Desktop\\Odin Project\\StockTraderNext\\serverDOTnet\\serverDOTnet.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Andre\\OneDrive\\Desktop\\Odin Project\\StockTraderNext\\server\\serverDOTnet.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Andre\\.nuget\\packages\\restsharp\\108.0.3\\restsharp.108.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
