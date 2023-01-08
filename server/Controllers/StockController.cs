@@ -16,9 +16,8 @@ public class stockController : ControllerBase
   }
 
   [HttpGet]
-  public async Task<IActionResult> Get()
+  public async Task<Stocks> Get()
   {
-    var response = await _stockService.GetStockAsync();
-    return Ok(response);
+    return await _stockService.GetStockAsync();
   }
 }
