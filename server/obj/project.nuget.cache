@@ -1,10 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "fGzR1ZILoJmPbWG8IDnTp0YGElvof9wP3P5jsUSDBXSrQUBX8LtBtl3SaFLSAwQWwD1IXoYipfGTpJqnDTw2zA==",
+  "dgSpecHash": "ZU30x8nt9j0iFSRZKOWSO1r0nEJp609uJRyrlMHqWV9rTH78JlUd4F3vJsST9EGpObj6zu/1fgZ5245wEjjAYA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Andre\\OneDrive\\Desktop\\Odin Project\\StockTraderNext\\server\\serverDOTnet.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Andre\\.nuget\\packages\\restsharp\\108.0.3\\restsharp.108.0.3.nupkg.sha512"
+    "C:\\Users\\Andre\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\Andre\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Andre\\.nuget\\packages\\restsharp\\108.0.3\\restsharp.108.0.3.nupkg.sha512",
+    "C:\\Users\\Andre\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
+    "C:\\Users\\Andre\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
+    "C:\\Users\\Andre\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
+    "C:\\Users\\Andre\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.4.0\\swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
   ],
   "logs": []
 }
