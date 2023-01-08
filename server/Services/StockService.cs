@@ -28,31 +28,4 @@ public class StockService
 
     return stockData;
   }
-
-
-
-
-
-
-
-  // private readonly HttpClient _httpClient;
-
-  // public StockService(HttpClient httpClient)
-  // {
-  //   _httpClient = httpClient;
-  //   _httpClient.BaseAddress = new Uri("https://www.alphavantage.co/");
-  // }
-
-  // public async Task<String> GetStockAsync()
-  // {
-  //   var response = await _httpClient.GetAsync("query?function=TIME_SERIES_INTRADAY&symbol=IBM&interval=5min&apikey=QIBYL49PJ38VSZ0B");
-
-  //   response.EnsureSuccessStatusCode();
-
-  //   using var responseStream = await response.Content.ReadAsStreamAsync();
-  //   var responseObject = await JsonSerializer.DeserializeAsync<Stocks>(responseStream);
-
-  //   Console.WriteLine(responseObject);
-  //   return "test";
-  // }
 }
