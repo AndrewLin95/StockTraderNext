@@ -1,24 +1,38 @@
+import { useEffect, useState } from 'react';
 import LineChart from '../../components/LineChart';
-import Chart from 'chart.js/auto';
-import ibmData from '../../components/ibmdata.json';
+import getIntradayAV from '../../APICalls/getIntradayAV';
+import { StockDailyResponseData } from '../../utils/Models';
 
 const Details = () => {
-  // const returnData = () => {
-  //   let obj = {};
-  //   console.log(ibmData);
-  //   for (const key in ibmData['Time Series (5min)']) {
-  //     console.log(key);
-  //   }
-  //   return obj;
-  // };
+  const intraDayDataInterface = {} as StockDailyResponseData;
+  const [intraDayData, setIntraDayData] = useState<StockDailyResponseData>(
+    intraDayDataInterface
+  );
+  const [loading, setLoading] = useState(true);
 
-  // returnData();
+  // API call to .net Server
+  async function getIntradayData() {
+    const _data = await getIntradayAV();
+    setIntraDayData(_data);
+    setLoading(false);
+  }
+  useEffect(() => {
+    getIntradayData();
+  }, []);
+
+  useEffect(() => {
+    console.log(intraDayData);
+  }, [intraDayData]);
+
+  if (loading) {
+    return null;
+  }
 
   return (
     <div className="border border-yellow-500 w-full h-full">
       <div>Static stock tracker info</div>
       <div>main page contents</div>
-      <LineChart />
+      <LineChart intraDayData={intraDayData} />
     </div>
   );
 };
