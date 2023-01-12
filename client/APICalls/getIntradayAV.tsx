@@ -1,7 +1,7 @@
 import { StockDailyResponseData } from '../utils/Models';
 
-export default async function getIntradayAV() {
-  const url = '/api/stock';
+export default async function getIntradayAV(stockSymbol: string) {
+  const url = `/api/stock/${stockSymbol}`;
 
   const requestOptions = {
     method: 'GET',

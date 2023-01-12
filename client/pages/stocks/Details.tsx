@@ -12,7 +12,7 @@ const Details = () => {
 
   // API call to .net Server
   async function getIntradayData() {
-    const _data = await getIntradayAV();
+    const _data = await getIntradayAV('ibm');
     setIntraDayData(_data);
     setLoading(false);
   }
