@@ -6,6 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "http-proxy-middleware": "^2.0.6",
     "next": "latest",
     "react": "18.2.0",
     "react-chartjs-2": "^5.1.0",
