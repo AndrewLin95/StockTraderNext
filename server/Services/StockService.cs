@@ -24,7 +24,7 @@ public class StockService
     var responseData = JsonSerializer.Deserialize<Stocks>(response.Content, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
 
     // Only collects the stock prices if they are within trading hours (every 5 minutes)
-    var stockValues = new List<StockData>();
+    var stockValues = new Dictionary<string, string>();
 
     foreach (var item in responseData.timeSeries)
     {
@@ -43,7 +43,7 @@ public class StockService
       // result > 0 = after, result < 0 = before
       if (compareLowResults > 0 && compareHighResults < 0)
       {
-        stockValues.Add(new StockData { stockPrice = item.Value._1Open, time = item.Key });
+        stockValues.Add(item.Key, item.Value._1Open);
       }
     };
 
