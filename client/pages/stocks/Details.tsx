@@ -16,6 +16,7 @@ const Details = () => {
     setIntraDayData(_data);
     setLoading(false);
   }
+
   useEffect(() => {
     getIntradayData();
   }, []);
