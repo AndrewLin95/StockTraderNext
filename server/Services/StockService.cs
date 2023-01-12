@@ -15,10 +15,10 @@ public class StockService
   }
 
   // returns the intraday stock data
-  public async Task<StockDailyResponseData> GetStockAsync()
+  public async Task<StockDailyResponseData> GetStockAsync(string stockSymbol)
   {
     // GET request to alpha vantage
-    var request = new RestRequest("query?function=TIME_SERIES_INTRADAY&symbol=IBM&interval=5min&apikey=QIBYL49PJ38VSZ0B");
+    var request = new RestRequest($"query?function=TIME_SERIES_INTRADAY&symbol={stockSymbol}&interval=5min&apikey=QIBYL49PJ38VSZ0B");
     var response = await _client.ExecuteGetAsync(request);
     // Deserializes the data to align with the Stocks model
     var responseData = JsonSerializer.Deserialize<Stocks>(response.Content, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });

@@ -15,9 +15,9 @@ public class stockController : ControllerBase
     _stockService = stockService;
   }
 
-  [HttpGet]
-  public async Task<StockDailyResponseData> Get()
+  [HttpGet("{stockSymbol}")]
+  public async Task<StockDailyResponseData> Get(string stockSymbol)
   {
-    return await _stockService.GetStockAsync();
+    return await _stockService.GetStockAsync(stockSymbol);
   }
 }
