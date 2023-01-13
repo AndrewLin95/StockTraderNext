@@ -4,11 +4,11 @@ using System.Text.Json;
 
 namespace StockTraderNext.Services;
 
-public class StockService
+public class AlphaVantageStockService
 {
   private readonly RestClient _client;
 
-  public StockService()
+  public AlphaVantageStockService()
   {
     var url = "https://www.alphavantage.co/";
     _client = new RestClient(url);
@@ -21,7 +21,7 @@ public class StockService
     var request = new RestRequest($"query?function=TIME_SERIES_INTRADAY&symbol={stockSymbol}&interval=5min&apikey=QIBYL49PJ38VSZ0B");
     var response = await _client.ExecuteGetAsync(request);
     // Deserializes the data to align with the Stocks model
-    var responseData = JsonSerializer.Deserialize<Stocks>(response.Content, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+    var responseData = JsonSerializer.Deserialize<AlphaVantageStocks>(response.Content, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
 
     // Only collects the stock prices if they are within trading hours (every 5 minutes)
     var stockValues = new Dictionary<string, string>();

@@ -1,7 +1,7 @@
 using System.Text.Json.Serialization;
 namespace StockTraderNext.Models;
 
-public class Stocks
+public class AlphaVantageStocks
 {
   [JsonPropertyName("Meta Data")]
   public MetaData metaData { get; set; } = null!;
