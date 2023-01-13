@@ -44,7 +44,7 @@ const LineChart: FC<Props> = ({ intraDayData }) => {
   };
 
   return (
-    <div>
+    <div className="w-2/5 h-1/5">
       <Line
         datasetIdKey={intraDayData.datasetIdKey}
         data={data}
