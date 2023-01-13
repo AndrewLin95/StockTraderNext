@@ -5,6 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddSingleton<AlphaVantageStockService>();
+builder.Services.AddSingleton<IEXStockServices>();
 
 builder.Services.AddControllers();
 
