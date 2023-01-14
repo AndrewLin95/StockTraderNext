@@ -20,5 +20,4 @@ public class IEXStockServices
     return placeholderNumber;
   }
   // /stable/stock/aapl/quote?token=TOKEN
-
 }
