@@ -18,6 +18,7 @@ const LineChart: FC<Props> = ({ intraDayData }) => {
     datasets: [
       {
         label: intraDayData.label,
+        // intraDayData returns a dictionary of stock prices in string format.
         data: intraDayData.stockData,
         borderColor: 'rgb(255, 99, 132)',
         backgroundColor: 'rgba(255, 99, 132, 0.5)'
